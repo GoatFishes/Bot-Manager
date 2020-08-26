@@ -1,0 +1,9 @@
+/src/postgres/data
+/src/api/strategies
+
+node_modules/
+coverage/
+
+.env
+.npmrc
+.DS_Store

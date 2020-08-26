@@ -1,0 +1,9 @@
+
+version: "3.5"
+
+services:  
+  bot_manager:
+    image: bot_manager
+    container_name: bot_manager
+    build: 
+      context: ./api

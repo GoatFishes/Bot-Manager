@@ -1,0 +1,41 @@
+name: CI/CD for project
+on:
+  push:
+    branches:    
+        # Push events on master branch
+        - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+
+      - name: Run tests
+        run: make test
+        env:
+          API_KEY_ID: ${{ secrets.API_KEY_ID }}
+          API_KEY_SECRET: ${{ secrets.API_KEY_SECRET }}
+        
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      
+      - name: Bump version and push tag
+        id: version_tag
+        uses: anothrNick/github-tag-action@1.17.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v1
+        with:
+          path: src/api
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: ${{ secrets.DOCKERHUB_USERNAME }}/bot_manager
+          tags: ${{ steps.version_tag.outputs.new_tag }}, latest
