@@ -108,10 +108,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@goatfishes/utils@^1.0.8":
-  version "1.0.8"
-  resolved "https://npm.pkg.github.com/download/@goatfishes/utils/1.0.8/3a79f18ac8f0fb1f91754a1babf596e9bab8a1d8330fd94801c3a88c7a5388db#dd5ca306faf46352d1a470b454f3013331d0f6c9"
-  integrity sha512-St9C227+wNSDQGopgO6QTQJClARJS4nvLa3gy7gbZTrBogy5mHnvO1DppT7pGDhr+ss8YpW2lQRe6/l9nEFhew==
+"@goatfishes/utils@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@goatfishes/utils/-/utils-1.0.1.tgz#fe22d5282f14ab0718be4c19b7c38cbfc7f7bbb5"
+  integrity sha512-Jb5Li7knRIQnRmXr+ZiveEJL3KnPDZXHaWFkZO6r6FlMMv9uqOe1D8xDk9Ohyv1yzOlTp9X8R+NNicvK17D0kw==
   dependencies:
     ajv "^6.12.2"
     kafka-node "^5.0.0"
@@ -1523,9 +1523,9 @@ locate-path@^2.0.0:
     path-exists "^3.0.0"
 
 lodash@^4.17.14, lodash@^4.17.19, lodash@^4.17.4:
-  version "4.17.19"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log4js@6.3.0:
   version "6.3.0"
