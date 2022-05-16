@@ -108,10 +108,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@goatfishes/utils@^1.0.8":
-  version "1.0.8"
-  resolved "https://npm.pkg.github.com/download/@goatfishes/utils/1.0.8/3a79f18ac8f0fb1f91754a1babf596e9bab8a1d8330fd94801c3a88c7a5388db#dd5ca306faf46352d1a470b454f3013331d0f6c9"
-  integrity sha512-St9C227+wNSDQGopgO6QTQJClARJS4nvLa3gy7gbZTrBogy5mHnvO1DppT7pGDhr+ss8YpW2lQRe6/l9nEFhew==
+"@goatfishes/utils@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@goatfishes/utils/-/utils-1.0.1.tgz#fe22d5282f14ab0718be4c19b7c38cbfc7f7bbb5"
+  integrity sha512-Jb5Li7knRIQnRmXr+ZiveEJL3KnPDZXHaWFkZO6r6FlMMv9uqOe1D8xDk9Ohyv1yzOlTp9X8R+NNicvK17D0kw==
   dependencies:
     ajv "^6.12.2"
     kafka-node "^5.0.0"
@@ -281,10 +281,10 @@ async@^2.6.2:
   dependencies:
     lodash "^4.17.14"
 
-async@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/async/-/async-3.2.0.tgz#b3a2685c5ebb641d3de02d161002c60fc9f85720"
-  integrity sha512-TR2mEZFVOj2pLStYxLht7TyfuRzaydfpxr3k9RpHIzMgw7A64dzsdqCxH1WJyQdoe8T10nDXd9wnEigmiuHIZw==
+async@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.2.tgz#2eb7671034bb2194d45d30e31e24ec7e7f9670cd"
+  integrity sha512-H0E+qZaDEfx/FY4t7iLRv1W2fFI6+pyCeTw1uN20AQPiwqwM6ojPxHxdLv4z8hi2DtnW9BOckSspLucW7pIE5g==
 
 axe-core@^3.5.4:
   version "3.5.5"
